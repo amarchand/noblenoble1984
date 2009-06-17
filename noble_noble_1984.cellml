@@ -8,7 +8,7 @@ http://COR.physiol.ox.ac.uk/ - COR@physiol.ox.ac.uk
 
 CellML 1.0 was used to generate this cellular model
 http://www.CellML.org/
---><model xmlns="http://www.cellml.org/cellml/1.0#" xmlns:cmeta="http://www.cellml.org/metadata/1.0#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqs="http://www.cellml.org/bqs/1.0#" xmlns:cellml="http://www.cellml.org/cellml/1.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" cmeta:id="noble_noble_1984_version02" name="noble_noble_1984_version02">
+--><model xmlns="http://www.cellml.org/cellml/1.0#" xmlns:cmeta="http://www.cellml.org/metadata/1.0#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqs="http://www.cellml.org/bqs/1.0#" xmlns:cellml="http://www.cellml.org/cellml/1.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:ns7="http://www.cellml.org/metadata/simulation/1.0#" name="noble_noble_1984" cmeta:id="noble_noble_1984">
    
 <documentation xmlns="http://cellml.org/tmp-documentation">
 <article>
@@ -2691,84 +2691,93 @@ A Model of Sino-Atrial Node Electrical Activity Based on a Modification of the D
       <map_components component_2="intracellular_potassium_concentration" component_1="extracellular_potassium_concentration"/>
       <map_variables variable_2="i_mK" variable_1="i_mK"/>
    </connection>
-
-
-
 <rdf:RDF>
-  <rdf:Seq rdf:about="rdf:#4cb69e55-cace-4789-a830-e6cad906ef8e">
-    <rdf:li rdf:resource="rdf:#0749e3c6-88db-4495-981f-e8c3be2a4314"/>
-    <rdf:li rdf:resource="rdf:#cc06ecbc-d335-4d32-9193-78506411a086"/>
+  <rdf:Seq rdf:about="rdf:#6c284e19-6618-4d67-b865-8d211f413dbe">
+    <rdf:li rdf:resource="rdf:#f7a19571-7e61-4289-a26b-8184fdb8bdc8"/>
+    <rdf:li rdf:resource="rdf:#01565c90-cefa-4dc0-a84f-e8a4a57bdf06"/>
   </rdf:Seq>
   <rdf:Description rdf:about="rdf:#c321e089-0dd1-41cb-936e-9721fe481503">
     <dcterms:W3CDTF>2006-03-31</dcterms:W3CDTF>
   </rdf:Description>
+  <rdf:Description rdf:about="rdf:#c78b5060-05b6-4905-8453-0eb13b3808c4">
+    <dcterms:W3CDTF>2007-12-04T15:32:58+13:00</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#11d9d344-a217-4f19-a501-8d8830d7a2a4">
+    <vCard:FN>James Lawson</vCard:FN>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#8065678d-3e07-4549-838f-6822da457679">
+    <dcterms:modified rdf:resource="rdf:#c78b5060-05b6-4905-8453-0eb13b3808c4"/>
+    <rdf:value>Units checked, curated.</rdf:value>
+    <cmeta:modifier rdf:resource="rdf:#0bbda771-2d02-443d-920f-8d3af6996f73"/>
+  </rdf:Description>
   <rdf:Description rdf:about="">
     <dc:publisher>Department of Physiology, Anatomy &amp; Genetics, University of Oxford</dc:publisher>
-    <cmeta:comment rdf:resource="rdf:#6db2e536-b1b6-4137-b2fe-c2bbaa60d256"/>
-    <dcterms:created rdf:resource="rdf:#5f73be18-67b4-4b3c-a276-310982c778da"/>
-    <dc:creator rdf:resource="rdf:#fcfc92be-776f-49a8-99bf-02b9af43a584"/>
+    <cmeta:comment rdf:resource="rdf:#551a27ef-426e-47d2-b695-1ac3c5f60af6"/>
+    <dcterms:created rdf:resource="rdf:#29f41fe7-e366-48cf-8012-9e39d453e852"/>
+    <dc:creator rdf:resource="rdf:#2701cb22-c051-4a79-ac5a-5a6eb4438ddd"/>
+    <cmeta:modification rdf:resource="rdf:#8065678d-3e07-4549-838f-6822da457679"/>
   </rdf:Description>
-  <rdf:Description rdf:about="rdf:#cc06ecbc-d335-4d32-9193-78506411a086">
-    <rdf:type rdf:resource="http://www.cellml.org/bqs/1.0#Person"/>
-    <vCard:N rdf:resource="rdf:#cae9ec00-7e62-4d67-9ebf-194f2417fadc"/>
+  <rdf:Description rdf:about="#noble_noble_1984">
+    <ns7:simulation rdf:resource="rdf:#$wuzx12"/>
+    <bqs:reference rdf:resource="rdf:#e2bd9e5a-84bb-4bac-8cd5-62d2540175a2"/>
+<bqs:reference rdf:parseType="Resource">
+  <dc:subject rdf:parseType="Resource">
+    <bqs:subject_type>keyword</bqs:subject_type>
+    <rdf:value>
+      <rdf:Bag>
+        <rdf:li>cardiac</rdf:li>
+        <rdf:li>electrophysiology</rdf:li>
+        <rdf:li>Sinoatrial Node</rdf:li>
+        <rdf:li>sinoatrial node</rdf:li>
+      </rdf:Bag>
+    </rdf:value>
+  </dc:subject>
+</bqs:reference>
+    <cmeta:comment rdf:resource="rdf:#67db23fc-965b-41e8-8464-9098153df1c1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#noble_noble_1984_version02">
-    <bqs:reference rdf:resource="rdf:#b19a7722-48f8-4da8-97f5-18202727ecca"/>
-    <cmeta:comment rdf:resource="rdf:#b9c1caec-4431-4621-af0f-b749e5566f04"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#b9c1caec-4431-4621-af0f-b749e5566f04">
-    <dc:creator rdf:resource="rdf:#84b33ca7-0873-49f9-b49c-77acd694ac22"/>
-    <rdf:value>This file is a CellML description of the model described in the paper "A Model of Sino-Atrial Node Electrical Activity Based on a Modification of the DiFrancesco-Noble (1984) Equations" by D. Noble and S.J. Noble</rdf:value>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#6db2e536-b1b6-4137-b2fe-c2bbaa60d256">
-    <dc:creator rdf:resource="rdf:#d9b1067a-1c5f-48ae-bc40-750276053cc3"/>
-    <rdf:value>This model has been curated by Penny Noble of Oxford University and is known to run in PCEnv and COR and reproduce the results published in the paper it is based on.</rdf:value>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#cf8f6af3-14ac-4d0c-8ea5-556269bfba9c">
-    <vCard:Given>Penny</vCard:Given>
-    <vCard:Family>Noble</vCard:Family>
-    <vCard:Other>unknown</vCard:Other>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#3eb8561c-9100-4d41-aa13-fd330b6a829b">
-    <rdf:type rdf:resource="http://imc.org/vCard/3.0#internet"/>
-    <rdf:value>penny.noble@dpag.ox.ac.uk</rdf:value>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#84b33ca7-0873-49f9-b49c-77acd694ac22">
-    <vCard:FN>James Lawson</vCard:FN>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#3cee009e-6ba0-49a7-a758-858e77efc008">
-    <vCard:Given>D</vCard:Given>
-    <vCard:Family>Noble</vCard:Family>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#b19a7722-48f8-4da8-97f5-18202727ecca">
-    <bqs:Pubmed_id/>
-    <bqs:JournalArticle rdf:resource="rdf:#e24feb01-0044-498d-9506-99ea5a4ec48e"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#d9b1067a-1c5f-48ae-bc40-750276053cc3">
-    <vCard:FN>James Lawson</vCard:FN>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#fcfc92be-776f-49a8-99bf-02b9af43a584">
-    <vCard:ORG rdf:resource="rdf:#028e68a7-bead-4094-9509-1452b47ae01f"/>
-    <vCard:EMAIL rdf:resource="rdf:#3eb8561c-9100-4d41-aa13-fd330b6a829b"/>
-    <vCard:N rdf:resource="rdf:#770175c8-5e1c-4592-a958-9a808eb1aa88"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#b73350c0-5531-4b8d-9414-1c865cd69cf1">
-    <vCard:N rdf:resource="rdf:#9a8a31f9-2cb8-4307-8637-6164c397d4c7"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#cae9ec00-7e62-4d67-9ebf-194f2417fadc">
-    <vCard:Given>S</vCard:Given>
-    <vCard:Family>Noble</vCard:Family>
-    <vCard:Other>J</vCard:Other>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#770175c8-5e1c-4592-a958-9a808eb1aa88">
-    <vCard:Given>Penny</vCard:Given>
-    <vCard:Family>Noble</vCard:Family>
-    <vCard:Other>J</vCard:Other>
+  <rdf:Description rdf:about="rdf:#2701cb22-c051-4a79-ac5a-5a6eb4438ddd">
+    <vCard:ORG rdf:resource="rdf:#8c6d2d18-8c5f-492c-acb0-f7761eec5a6c"/>
+    <vCard:EMAIL rdf:resource="rdf:#9eac888f-becf-4e76-8569-8a4af94049cd"/>
+    <vCard:N rdf:resource="rdf:#7ff1f59a-747a-4197-806d-2d607a79a191"/>
   </rdf:Description>
   <rdf:Description rdf:about="rdf:#9a8a31f9-2cb8-4307-8637-6164c397d4c7">
     <vCard:Given>Peter</vCard:Given>
     <vCard:Family>Villiger</vCard:Family>
     <vCard:Other>J</vCard:Other>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#a557167c-b2ed-468b-904e-abffa1a63c1c">
+    <vCard:Orgname>Oxford University</vCard:Orgname>
+    <vCard:Orgunit>unknown</vCard:Orgunit>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#$wuzx12">
+    <ns7:boundIntervals rdf:resource="rdf:#$xuzx12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#c78df153-21bc-4e4c-9418-d087e8f376e2">
+    <vCard:Given>S</vCard:Given>
+    <vCard:Family>Noble</vCard:Family>
+    <vCard:Other>J</vCard:Other>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#0bbda771-2d02-443d-920f-8d3af6996f73">
+    <vCard:N rdf:resource="rdf:#2d0819ac-8f65-4fda-950c-1b9081ea4748"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#b73350c0-5531-4b8d-9414-1c865cd69cf1">
+    <vCard:N rdf:resource="rdf:#9a8a31f9-2cb8-4307-8637-6164c397d4c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#551a27ef-426e-47d2-b695-1ac3c5f60af6">
+    <dc:creator rdf:resource="rdf:#6e365618-f3a1-40d4-9ff6-f62ddf3e7ee3"/>
+    <rdf:value>This model has been curated by Penny Noble of Oxford University and is known to run in PCEnv and COR and reproduce the results published in the paper it is based on.</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#fc1f8d02-de9a-4bbb-8ec8-89d8562143ae">
+    <vCard:Given>D</vCard:Given>
+    <vCard:Family>Noble</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#$yuzx12">
+    <ns7:nonstandard-pointDensity>100000</ns7:nonstandard-pointDensity>
+    <ns7:maximumStepSize>0.001</ns7:maximumStepSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#67db23fc-965b-41e8-8464-9098153df1c1">
+    <dc:creator rdf:resource="rdf:#11d9d344-a217-4f19-a501-8d8830d7a2a4"/>
+    <rdf:value>This file is a CellML description of the model described in the paper "A Model of Sino-Atrial Node Electrical Activity Based on a Modification of the DiFrancesco-Noble (1984) Equations" by D. Noble and S.J. Noble</rdf:value>
   </rdf:Description>
   <rdf:Description rdf:about="rdf:#c6cb8f26-de4e-4d34-8910-eecf182ac559">
     <rdf:type rdf:resource="http://imc.org/vCard/3.0#internet"/>
@@ -2782,46 +2791,74 @@ A Model of Sino-Atrial Node Electrical Activity Based on a Modification of the D
     <vCard:EMAIL rdf:resource="rdf:#c6cb8f26-de4e-4d34-8910-eecf182ac559"/>
     <vCard:N rdf:resource="rdf:#cf8f6af3-14ac-4d0c-8ea5-556269bfba9c"/>
   </rdf:Description>
+  <rdf:Description rdf:about="rdf:#8c6d2d18-8c5f-492c-acb0-f7761eec5a6c">
+    <vCard:Orgname>Oxford University</vCard:Orgname>
+    <vCard:Orgunit>Department of Physiology, Anatomy &amp; Genetics</vCard:Orgunit>
+  </rdf:Description>
   <rdf:Description rdf:about="">
     <cmeta:modification rdf:resource="rdf:#7bd099ca-391d-4716-a7a0-4e93da55e36d"/>
     <dcterms:created rdf:resource="rdf:#b6aa86c3-a885-4494-8481-cfa778867ff9"/>
     <dc:creator rdf:resource="rdf:#e6477bc6-1144-470e-8994-50a5dfef3a00"/>
   </rdf:Description>
-  <rdf:Description rdf:about="rdf:#a557167c-b2ed-468b-904e-abffa1a63c1c">
-    <vCard:Orgname>Oxford University</vCard:Orgname>
-    <vCard:Orgunit>unknown</vCard:Orgunit>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#028e68a7-bead-4094-9509-1452b47ae01f">
-    <vCard:Orgname>Oxford University</vCard:Orgname>
-    <vCard:Orgunit>Department of Physiology, Anatomy &amp; Genetics</vCard:Orgunit>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#87e612e0-9cfc-4a82-bec3-86f92d7e017f">
-    <dcterms:W3CDTF>1984-09-22</dcterms:W3CDTF>
-  </rdf:Description>
-  <rdf:Description rdf:about="rdf:#5f73be18-67b4-4b3c-a276-310982c778da">
+  <rdf:Description rdf:about="rdf:#29f41fe7-e366-48cf-8012-9e39d453e852">
     <dcterms:W3CDTF>2007-09-20T00:00:00+00:00</dcterms:W3CDTF>
   </rdf:Description>
-  <rdf:Description rdf:about="rdf:#e24feb01-0044-498d-9506-99ea5a4ec48e">
-    <dc:creator rdf:resource="rdf:#4cb69e55-cace-4789-a830-e6cad906ef8e"/>
+  <rdf:Description rdf:about="rdf:#49bd8ff2-c54e-45c9-b1f6-245066a546bd">
+    <dc:creator rdf:resource="rdf:#6c284e19-6618-4d67-b865-8d211f413dbe"/>
     <dc:title>A Model of Sino-Atrial Node Electrical Activity Based on a Modification of the DiFrancesco-Noble (1984) Equations</dc:title>
     <bqs:volume>222</bqs:volume>
     <bqs:first_page>295</bqs:first_page>
-    <bqs:Journal rdf:resource="rdf:#431d6e35-7b4c-4729-bbf9-bf0a5835c5b1"/>
-    <dcterms:issued rdf:resource="rdf:#87e612e0-9cfc-4a82-bec3-86f92d7e017f"/>
+    <bqs:Journal rdf:resource="rdf:#901778a4-35be-4d05-b268-19f7b3aecea7"/>
+    <dcterms:issued rdf:resource="rdf:#058ec306-e9f9-4d66-97bc-1c9a48ed7f73"/>
     <bqs:last_page>304</bqs:last_page>
   </rdf:Description>
-  <rdf:Description rdf:about="rdf:#0749e3c6-88db-4495-981f-e8c3be2a4314">
-    <rdf:type rdf:resource="http://www.cellml.org/bqs/1.0#Person"/>
-    <vCard:N rdf:resource="rdf:#3cee009e-6ba0-49a7-a758-858e77efc008"/>
+  <rdf:Description rdf:about="rdf:#7ff1f59a-747a-4197-806d-2d607a79a191">
+    <vCard:Given>Penny</vCard:Given>
+    <vCard:Family>Noble</vCard:Family>
+    <vCard:Other>J</vCard:Other>
   </rdf:Description>
-  <rdf:Description rdf:about="rdf:#431d6e35-7b4c-4729-bbf9-bf0a5835c5b1">
+  <rdf:Description rdf:about="rdf:#058ec306-e9f9-4d66-97bc-1c9a48ed7f73">
+    <dcterms:W3CDTF>1984-09-22</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#cf8f6af3-14ac-4d0c-8ea5-556269bfba9c">
+    <vCard:Given>Penny</vCard:Given>
+    <vCard:Family>Noble</vCard:Family>
+    <vCard:Other>unknown</vCard:Other>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#901778a4-35be-4d05-b268-19f7b3aecea7">
     <dc:title>Proceedings of the Royal Society of London. Series B, Biological Sciences</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#6e365618-f3a1-40d4-9ff6-f62ddf3e7ee3">
+    <vCard:FN>James Lawson</vCard:FN>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#f7a19571-7e61-4289-a26b-8184fdb8bdc8">
+    <rdf:type rdf:resource="http://www.cellml.org/bqs/1.0#Person"/>
+    <vCard:N rdf:resource="rdf:#fc1f8d02-de9a-4bbb-8ec8-89d8562143ae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#$xuzx12">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="rdf:#$yuzx12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#e2bd9e5a-84bb-4bac-8cd5-62d2540175a2">
+    <bqs:Pubmed_id/>
+    <bqs:JournalArticle rdf:resource="rdf:#49bd8ff2-c54e-45c9-b1f6-245066a546bd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#9eac888f-becf-4e76-8569-8a4af94049cd">
+    <rdf:type rdf:resource="http://imc.org/vCard/3.0#internet"/>
+    <rdf:value>penny.noble@dpag.ox.ac.uk</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#01565c90-cefa-4dc0-a84f-e8a4a57bdf06">
+    <rdf:type rdf:resource="http://www.cellml.org/bqs/1.0#Person"/>
+    <vCard:N rdf:resource="rdf:#c78df153-21bc-4e4c-9418-d087e8f376e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="rdf:#2d0819ac-8f65-4fda-950c-1b9081ea4748">
+    <vCard:Given>Penny</vCard:Given>
+    <vCard:Family>Noble</vCard:Family>
+    <vCard:Other>J</vCard:Other>
   </rdf:Description>
   <rdf:Description rdf:about="rdf:#7bd099ca-391d-4716-a7a0-4e93da55e36d">
     <dcterms:modified rdf:resource="rdf:#c321e089-0dd1-41cb-936e-9721fe481503"/>
-    <rdf:value>
-          added metadata
-        </rdf:value>
+    <rdf:value>added metadata</rdf:value>
     <cmeta:modifier rdf:resource="rdf:#b73350c0-5531-4b8d-9414-1c865cd69cf1"/>
   </rdf:Description>
 </rdf:RDF>
