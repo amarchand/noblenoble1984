@@ -8,7 +8,8 @@ http://COR.physiol.ox.ac.uk/ - COR@physiol.ox.ac.uk
 
 CellML 1.0 was used to generate this cellular model
 http://www.CellML.org/
---><model xmlns="http://www.cellml.org/cellml/1.0#" xmlns:cmeta="http://www.cellml.org/metadata/1.0#" xml:base="" cmeta:id="noble_noble_1984" name="noble_noble_1984">
+-->
+<model xmlns="http://www.cellml.org/cellml/1.0#" xmlns:cmeta="http://www.cellml.org/metadata/1.0#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqs="http://www.cellml.org/bqs/1.0#" xmlns:cellml="http://www.cellml.org/cellml/1.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" cmeta:id="noble_noble_1984" name="noble_noble_1984">
    
 <documentation xmlns="http://cellml.org/tmp-documentation">
 <article>
@@ -18,7 +19,7 @@ http://www.CellML.org/
     <firstname>Catherine</firstname>
           <surname>Lloyd</surname>
     <affiliation>
-      <shortaffil>Bioengineering Institute, University of Auckland</shortaffil>
+      <shortaffil>Auckland Bioengineering Institute, The University of Auckland</shortaffil>
     </affiliation>
   </author>
 </articleinfo>
@@ -54,19 +55,6 @@ A Model of Sino-Atrial Node Electrical Activity Based on a Modification of the D
 </mediaobject>
 <caption>A schematic diagram describing the current flows across the cell membrane that are captured in the NN SAN model.</caption>
 </informalfigure>
-
-<informalfigure float="0" id="fig_cellml_rendering">
-<mediaobject>
-  <imageobject>
-    <objectinfo>
-      <title>the cellml rendering of the NN SAN model</title>
-    </objectinfo>
-    <imagedata fileref="cellml_rendering.gif"/>
-  </imageobject>
-</mediaobject>
-<caption>The network defined in the CellML description of the Noble-Noble SAN model. For simplicity, not all the variables are shown.</caption>
-</informalfigure>
-
 </sect1>
 </article>
 </documentation>
