@@ -21,7 +21,6 @@
 				<math:ci>t</math:ci>
 			</math:math>
 		</dataGenerator>
-
 		<dataGenerator id="Vm" name="Membrane Potential">
 			<listOfVariables>
 				<variable id="v" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='V']" />
@@ -30,6 +29,14 @@
 				<math:ci>v</math:ci>
 			</math:math>
 		</dataGenerator>
+		<!--<dataGenerator id="V_prim" name="Derivated Membrane Potential">
+			<listOfVariables>
+				<variable id="v_prim" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='V_prim']" />
+			</listOfVariables>
+			<math:math>
+				<math:ci>v_prim</math:ci>
+			</math:math>
+		</dataGenerator>-->
 	</listOfDataGenerators>
 	<listOfOutputs>
 		<plot2D id="plot1" name="Action Potential">
@@ -37,6 +44,11 @@
 				<curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Vm" />
 			</listOfCurves>
 		</plot2D>
+		<!--<plot2D id="plot2" name="Derivated Action Potential">
+			<listOfCurves>
+				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="V_prim" />
+			</listOfCurves>
+		</plot2D>-->
 	</listOfOutputs>
 </sedML>
 
