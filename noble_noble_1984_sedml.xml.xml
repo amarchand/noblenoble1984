@@ -2,12 +2,12 @@
 <sedML  xmlns="http://sed-ml.org/" 
        xmlns:math="http://www.w3.org/1998/Math/MathML" level="1" version="1">
 	<listOfSimulations>
-		<uniformTimeCourse id="simulation1" initialTime="0" outputStartTime="0" outputEndTime="3" numberOfPoints="3000">
+		<uniformTimeCourse id="simulation1" initialTime="0" outputStartTime="0" outputEndTime="0.8" numberOfPoints="800">
 			<algorithm kisaoID="KISAO:0000019" />
 		</uniformTimeCourse>
 	</listOfSimulations>
 	<listOfModels>
-		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/noble_noble_1984/rawfile/40140a152b470300566e004aa3bedc3765a17110/noble_noble_1984.cellml" />
+		<model id="model1" language="urn:sedml:language:cellml" source="https://raw.githubusercontent.com/amarchand/noblenoble1984/master/noble_noble_1984.cellml" />
 	</listOfModels>
 	<listOfTasks>
 		<task id="task0" modelReference="model1"  simulationReference="simulation1" />
