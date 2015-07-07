@@ -68,7 +68,7 @@
         <variable cmeta:id="environment_time" name="time" public_interface="out" units="second"/>
     </component>
     <component name="membrane">
-        <variable cmeta:id="membrane_V" initial_value="-60" name="V" public_interface="out" units="millivolt"/>
+        <variable cmeta:id="membrane_V" initial_value="-40" name="V" public_interface="out" units="millivolt"/>
         <variable initial_value="8314.472" name="R" public_interface="out" units="joule_per_kilomole_kelvin"/>
         <variable initial_value="310" name="T" public_interface="out" units="kelvin"/>
         <variable initial_value="96485.3415" name="F" public_interface="out" units="coulomb_per_mole"/>
