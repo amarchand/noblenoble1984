@@ -131,7 +131,25 @@
                     </bvar>
                     <ci>V</ci>
                 </apply>
-                <ci>Vprim</ci>
+                <apply>
+                    <divide/>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <plus/>
+                            <ci>i_f</ci>
+                            <ci>i_K</ci>
+                            <ci>i_K1</ci>
+                            <ci>i_Na_b</ci>
+                            <ci>i_Ca_b</ci>
+                            <ci>i_p</ci>
+                            <ci>i_NaCa</ci>
+                            <ci>i_Na</ci>
+                            <ci>i_si</ci>
+                        </apply>
+                    </apply>
+                    <ci>C</ci>
+                </apply>
             </apply>
         </math>
     </component>

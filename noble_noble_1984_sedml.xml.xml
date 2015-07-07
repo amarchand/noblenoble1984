@@ -7,7 +7,7 @@
 		</uniformTimeCourse>
 	</listOfSimulations>
 	<listOfModels>
-		<model id="model1" language="urn:sedml:language:cellml" source="https://models.cellml.org/workspace/noble_noble_1984/rawfile/40140a152b470300566e004aa3bedc3765a17110/noble_noble_1984.cellml" />	
+		<model id="model1" language="urn:sedml:language:cellml" source="https://raw.githubusercontent.com/amarchand/noblenoble1984/master/noble_noble_1984.cellml" />	
 	</listOfModels>
 	<listOfTasks>
 		<task id="task0" modelReference="model1"  simulationReference="simulation1" />
@@ -31,7 +31,7 @@
 		</dataGenerator>
 		<dataGenerator id="V_prim" name="Derivated Membrane Potential">
 			<listOfVariables>
-				<variable id="v_prim" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='V_prim']" />
+				<variable id="v_prim" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='Vprim']" />
 			</listOfVariables>
 			<math:math>
 				<math:ci>v2</math:ci>
