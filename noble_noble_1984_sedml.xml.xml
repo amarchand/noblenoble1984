@@ -44,7 +44,7 @@
 				<curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Vm" />
 			</listOfCurves>
 		</plot2D>
-		<plot2D id="plot2" name="Derivated Action Potential">
+		-<plot2D id="plot2" name="Derivated Action Potential">
 			<listOfCurves>
 				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="V_prim" />
 			</listOfCurves>
