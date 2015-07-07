@@ -7,7 +7,7 @@
 		</uniformTimeCourse>
 	</listOfSimulations>
 	<listOfModels>
-		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/noble_noble_1984/rawfile/40140a152b470300566e004aa3bedc3765a17110/noble_noble_1984.cellml" />
+		<model id="model1" language="urn:sedml:language:cellml" source="http://raw.githubusercontent.com/amarchand/noblenoble1984/master/noble_noble_1984.cellml" />
 	</listOfModels>
 	<listOfTasks>
 		<task id="task0" modelReference="model1"  simulationReference="simulation1" />
@@ -29,14 +29,14 @@
 				<math:ci>v</math:ci>
 			</math:math>
 		</dataGenerator>
-		<!--<dataGenerator id="V_prim" name="Derivated Membrane Potential">
+		<dataGenerator id="V_prim" name="Derivated Membrane Potential">
 			<listOfVariables>
 				<variable id="v_prim" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='V_prim']" />
 			</listOfVariables>
 			<math:math>
 				<math:ci>v_prim</math:ci>
 			</math:math>
-		</dataGenerator>-->
+		</dataGenerator>
 	</listOfDataGenerators>
 	<listOfOutputs>
 		<plot2D id="plot1" name="Action Potential">
@@ -44,11 +44,11 @@
 				<curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Vm" />
 			</listOfCurves>
 		</plot2D>
-		<!--<plot2D id="plot2" name="Derivated Action Potential">
+		<plot2D id="plot2" name="Derivated Action Potential">
 			<listOfCurves>
 				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="V_prim" />
 			</listOfCurves>
-		</plot2D>-->
+		</plot2D>
 	</listOfOutputs>
 </sedML>
 
