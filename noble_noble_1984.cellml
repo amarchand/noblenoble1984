@@ -84,7 +84,7 @@
         <variable name="i_NaCa" public_interface="in" units="nanoA"/>
         <variable name="i_Na" public_interface="in" units="nanoA"/>
         <variable name="i_si" public_interface="in" units="nanoA"/>
-        <variable name="V_prim" units="millivolt_per_second"/>
+        <variable name="Vprim" units="millivolt_per_second"/>
         <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
                 <eq/>
@@ -101,7 +101,7 @@
             </apply>
             <apply>
                 <eq/>
-                <ci>V_prim</ci>
+                <ci>Vprim</ci>
                 <apply>
                     <divide/>
                     <apply>
@@ -131,7 +131,7 @@
                     </bvar>
                     <ci>V</ci>
                 </apply>
-                <ci>V_prim</ci>
+                <ci>Vprim</ci>
             </apply>
         </math>
     </component>

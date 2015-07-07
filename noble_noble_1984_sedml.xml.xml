@@ -7,7 +7,8 @@
 		</uniformTimeCourse>
 	</listOfSimulations>
 	<listOfModels>
-		<model id="model1" language="urn:sedml:language:cellml" source="https://models.cellml.org/workspace/noble_noble_1984/rawfile/40140a152b470300566e004aa3bedc3765a17110/noble_noble_1984.cellml" />	</listOfModels>
+		<model id="model1" language="urn:sedml:language:cellml" source="https://models.cellml.org/workspace/noble_noble_1984/rawfile/40140a152b470300566e004aa3bedc3765a17110/noble_noble_1984.cellml" />	
+	</listOfModels>
 	<listOfTasks>
 		<task id="task0" modelReference="model1"  simulationReference="simulation1" />
 	</listOfTasks>
@@ -33,9 +34,8 @@
 				<variable id="v_prim" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='V_prim']" />
 			</listOfVariables>
 			<math:math>
-				<math:ci>v_prim</math:ci>
+				<math:ci>v2</math:ci>
 			</math:math>
-
 		</dataGenerator>
 	</listOfDataGenerators>
 	<listOfOutputs>
@@ -48,7 +48,6 @@
 			<listOfCurves>
 				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="V_prim" />
 			</listOfCurves>
-
 		</plot2D>
 	</listOfOutputs>
 </sedML>
