@@ -29,12 +29,12 @@
 				<math:ci>v</math:ci>
 			</math:math>
 		</dataGenerator>
-		<dataGenerator id="i_k1" name="Derivated Membrane Potential">
+		<dataGenerator id="Vprim" name="Derivated Membrane Potential">
 			<listOfVariables>
-				<variable id="v_prim" taskReference="task0" target="/cellml:model/cellml:component[@name='time_independent_potassium_current']/cellml:variable[@name='i_K1']" />
+				<variable id="vprim" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='Vprim']" />
 			</listOfVariables>
 			<math:math>
-				<math:ci>v2</math:ci>
+				<math:ci>vprim</math:ci>
 			</math:math>
 		</dataGenerator>
 	</listOfDataGenerators>
@@ -46,7 +46,7 @@
 		</plot2D>
 		<plot2D id="plot2" name="Derivated Action Potential">
 			<listOfCurves>
-				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="i_k1" />
+				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Vprim" />
 			</listOfCurves>
 		</plot2D>
 	</listOfOutputs>
