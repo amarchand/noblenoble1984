@@ -7,7 +7,7 @@
 		</uniformTimeCourse>
 	</listOfSimulations>
 	<listOfModels>
-		<model id="model1" language="urn:sedml:language:cellml" source="http://raw.githubusercontent.com/amarchand/noblenoble1984/master/noble_noble_1984.cellml" />	
+		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/245/rawfile/1a3ecd469c34fc090edd9a8bc8a2182ccfbb9baa/noble_noble_1984.cellml" />	
 	</listOfModels>
 	<listOfTasks>
 		<task id="task0" modelReference="model1"  simulationReference="simulation1" />
@@ -29,9 +29,9 @@
 				<math:ci>v</math:ci>
 			</math:math>
 		</dataGenerator>
-		<dataGenerator id="V_prim" name="Derivated Membrane Potential">
+		<dataGenerator id="i_k1" name="Derivated Membrane Potential">
 			<listOfVariables>
-				<variable id="v_prim" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='Vprim']" />
+				<variable id="v_prim" taskReference="task0" target="/cellml:model/cellml:component[@name='time_independent_potassium_current']/cellml:variable[@name='i_K1']" />
 			</listOfVariables>
 			<math:math>
 				<math:ci>v2</math:ci>
@@ -46,7 +46,7 @@
 		</plot2D>
 		<plot2D id="plot2" name="Derivated Action Potential">
 			<listOfCurves>
-				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="V_prim" />
+				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="i_k1" />
 			</listOfCurves>
 		</plot2D>
 	</listOfOutputs>
