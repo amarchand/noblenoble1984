@@ -7,7 +7,7 @@
 		</uniformTimeCourse>
 	</listOfSimulations>
 	<listOfModels>
-		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/245/rawfile/1a3ecd469c34fc090edd9a8bc8a2182ccfbb9baa/noble_noble_1984.cellml" />	
+		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/246/rawfile/d1dea63f870cc247be39807a094a9fcf1db4bd42/noble_noble_1984_central_model.cellml" />	
 	</listOfModels>
 	<listOfTasks>
 		<task id="task0" modelReference="model1"  simulationReference="simulation1" />
