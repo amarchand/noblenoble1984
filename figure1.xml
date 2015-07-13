@@ -5,12 +5,17 @@
 		<uniformTimeCourse id="simulation1" initialTime="0" outputStartTime="0" outputEndTime="0.8" numberOfPoints="800">
 			<algorithm kisaoID="KISAO:0000019" />
 		</uniformTimeCourse>
+		<uniformTimeCourse id="simulation2" initialTime="0" outputStartTime="0" outputEndTime="0.8" numberOfPoints="800">
+			<algorithm kisaoID="KISAO:0000019" />
+		</uniformTimeCourse>
 	</listOfSimulations>
 	<listOfModels>
-		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/246/rawfile/d1dea63f870cc247be39807a094a9fcf1db4bd42/noble_noble_1984_central_model.cellml" />	
+		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/246/rawfile/d1dea63f870cc247be39807a094a9fcf1db4bd42/noble_noble_1984_central_model.cellml" />
+		<model id="model2" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/246/rawfile/653fab83aa7bcdf225e62656d964e3bd39a29dad/noble_noble_1984_peripheral_model.cellml" />
 	</listOfModels>
 	<listOfTasks>
 		<task id="task0" modelReference="model1"  simulationReference="simulation1" />
+		<task id="task1" modelReference="model2"  simulationReference="simulation2" />
 	</listOfTasks>
 	<listOfDataGenerators>
 		<dataGenerator id="time" name="time">
@@ -21,32 +26,58 @@
 				<math:ci>t</math:ci>
 			</math:math>
 		</dataGenerator>
-		<dataGenerator id="Vm" name="Membrane Potential">
+		<dataGenerator id="Vm1" name="Membrane Potential , Central Model">
 			<listOfVariables>
-				<variable id="v" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='V']" />
+				<variable id="v1" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='V']" />
 			</listOfVariables>
 			<math:math>
-				<math:ci>v</math:ci>
+				<math:ci>v1</math:ci>
 			</math:math>
 		</dataGenerator>
-		<dataGenerator id="Vprim" name="Derivated Membrane Potential">
+		<dataGenerator id="Vm2" name="Membrane Potential , Peripheral Model">
 			<listOfVariables>
-				<variable id="vprim" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='Vprim']" />
+				<variable id="v2" taskReference="task1" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='V']" />
 			</listOfVariables>
 			<math:math>
-				<math:ci>vprim</math:ci>
+				<math:ci>v2</math:ci>
+			</math:math>
+		</dataGenerator>
+		<dataGenerator id="Vprim1" name="Derivated Membrane Potential">
+			<listOfVariables>
+				<variable id="vprim1" taskReference="task0" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='Vprim']" />
+			</listOfVariables>
+			<math:math>
+				<math:ci>vprim1</math:ci>
+			</math:math>
+		</dataGenerator>
+		<dataGenerator id="Vprim2" name="Derivated Membrane Potential">
+			<listOfVariables>
+				<variable id="vprim2" taskReference="task1" target="/cellml:model/cellml:component[@name='membrane']/cellml:variable[@name='Vprim']" />
+			</listOfVariables>
+			<math:math>
+				<math:ci>vprim2</math:ci>
 			</math:math>
 		</dataGenerator>
 	</listOfDataGenerators>
 	<listOfOutputs>
-		<plot2D id="plot1" name="Action Potential">
+		<plot2D id="plot1" name="Action Potential , Central Model">
 			<listOfCurves>
-				<curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Vm" />
+				<curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Vm1" />
 			</listOfCurves>
 		</plot2D>
-		<plot2D id="plot2" name="Derivated Action Potential">
+		<plot2D id="plot2" name="Derivated Action Potential , Central Model">
 			<listOfCurves>
-				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Vprim" />
+				<curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Vprim1" />
+			</listOfCurves>
+		</plot2D>
+		<plot2D id="plot3" name="Action Potential , Peripheral Model">
+			<listOfCurves>
+				<curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Vm2" />
+			</listOfCurves>
+		</plot2D>
+		<plot2D id="plot4" name="Derivated Action Potential , Peripheral Model">
+			<listOfCurves>
+				<curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Vprim2" />
 			</listOfCurves>
 		</plot2D>
 	</listOfOutputs>
