@@ -15,15 +15,14 @@
 		<repeatedTask id="task0" resetModel="True" range="current" modelReference="model1" simulationReference="simulation1" >
 			<ranges>
 				<vectorRange id="current">
-					<value>2</value>
+					<value>7.5</value>
 			
-					<value>3</value>
-		
-					<value>6</value>	
+					<value>30</value>
+
 				</vectorRange>
 			</ranges>
 			<changes>
-				<setValue target="/cellml:model/cellml:component[@name='extracellular_potassium_concentration']/cellml:variable[@name='Kb']/@initial_value">
+				<setValue target="/cellml:model/cellml:component[@name='intracellular_sodium_concentration']/cellml:variable[@name='Nai']/@initial_value">
 					<listOfVariables>
 						<variable id="loopValue" name="current loop value"
                         target="#current"/>
