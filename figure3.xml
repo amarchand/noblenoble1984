@@ -8,9 +8,9 @@
 	</listOfSimulations>
 	<listOfModels>
 
-		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/246/rawfile/653fab83aa7bcdf225e62656d964e3bd39a29dad/noble_noble_1984_peripheral_model.cellml" />
+		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/245/rawfile/a472894356dd16a76e622573436235d6897d15b0/noble_noble_1984_peripheral_model.cellml" />
 
-		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/245/rawfile/1a3ecd469c34fc090edd9a8bc8a2182ccfbb9baa/noble_noble_1984.cellml" />	
+		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/245/rawfile/a472894356dd16a76e622573436235d6897d15b0/noble_noble_1984_central_model.cellml" />	
 
 	</listOfModels>
 	
@@ -66,7 +66,6 @@
 				<math:ci>vprim</math:ci>
 			</math:math>
 		</dataGenerator>
->>>>>>> 4a92c8eb762e0fbab56de3f375abb790b4765732:noble_noble_1984_sedml.xml.xml
 	</listOfDataGenerators>
 	<listOfOutputs>
 		<plot2D id="plot1" name="Action Potential">

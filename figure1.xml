@@ -10,8 +10,8 @@
 		</uniformTimeCourse>
 	</listOfSimulations>
 	<listOfModels>
-		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/246/rawfile/d1dea63f870cc247be39807a094a9fcf1db4bd42/noble_noble_1984_central_model.cellml" />
-		<model id="model2" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/246/rawfile/653fab83aa7bcdf225e62656d964e3bd39a29dad/noble_noble_1984_peripheral_model.cellml" />
+		<model id="model1" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/245/rawfile/a472894356dd16a76e622573436235d6897d15b0/noble_noble_1984_central_model.cellml" />
+		<model id="model2" language="urn:sedml:language:cellml" source="http://models.cellml.org/workspace/245/rawfile/a472894356dd16a76e622573436235d6897d15b0/noble_noble_1984_peripheral_model.cellml" />
 	</listOfModels>
 	<listOfTasks>
 		<task id="task0" modelReference="model1"  simulationReference="simulation1" />
